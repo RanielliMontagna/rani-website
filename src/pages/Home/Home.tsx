@@ -1,14 +1,18 @@
-import { Footer, TitleBar } from 'components';
 import * as styled from './Home.styles';
 
+import TitleBar from './titleBar/titleBar';
 import Intro from './intro/intro';
+import Sobre from './sobre/sobre';
+import Dev from './dev/dev';
+import Footer from './footer/footer';
 
 const LandingPage = () => {
   return (
     <styled.Geral>
-      <TitleBar rota="home" />
+      <TitleBar />
       <Intro />
-      <div style={{ display: 'flex', height: 'calc(100% - 170px)' }} />
+      <Sobre />
+      <Dev />
       <Footer />
     </styled.Geral>
   );

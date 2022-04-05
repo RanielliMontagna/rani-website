@@ -40,7 +40,7 @@ export const DivOpcoes = styled.div`
   &.menuMobile {
     display: none;
     @media (max-width: 576px) {
-      display: block;
+      display: flex;
     }
   }
 

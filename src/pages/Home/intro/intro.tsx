@@ -3,7 +3,7 @@ import * as styled from './intro.styles';
 
 const Intro = () => {
   return (
-    <styled.Intro>
+    <styled.Intro id="inicio">
       <styled.Titulo>
         <span> Olá, eu sou</span> <span className="primaria">Ranielli Montagna</span>
       </styled.Titulo>

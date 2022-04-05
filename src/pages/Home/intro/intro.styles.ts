@@ -8,7 +8,7 @@ export const Intro = styled.div`
   flex-direction: column;
   color: ${({ theme }) => theme.coresExtras.branco};
   font-size: 4vw;
-  background-image: url('/static/images/quarto.jpg');
+  background-image: url('https://images.unsplash.com/photo-1496302662116-35cc4f36df92');
   background-size: cover;
   background-position: center;
   position: relative;
