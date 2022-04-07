@@ -32,7 +32,7 @@ export const Button = styled.button<{ size: Size; fullWidth: boolean; color?: Co
     color: ${({ color }) => getColor({ color })};
 
     &:hover {
-      background-color: ${({ color, theme }) => (color ? getColor({ color }) : theme.coresExtras.preto)};
+      background-color: ${({ color, theme }) => (color ? getColor({ color }) : theme.coresNeutras.preto)};
       color: ${({ color }) => getContrastColor({ color })};
       transition: 0.5s;
     }
@@ -44,7 +44,7 @@ export const Button = styled.button<{ size: Size; fullWidth: boolean; color?: Co
     background-color: transparent;
 
     &:hover {
-      background-color: ${({ color, theme }) => (color ? getColor({ color }) : theme.coresExtras.preto)};
+      background-color: ${({ color, theme }) => (color ? getColor({ color }) : theme.coresNeutras.preto)};
       color: ${({ color }) => getContrastColor({ color })};
       transition: 0.5s;
     }
@@ -56,7 +56,7 @@ export const Button = styled.button<{ size: Size; fullWidth: boolean; color?: Co
   }
 
   &:hover {
-    background-color: ${({ color, theme }) => (color ? getColor({ color }) : theme.coresExtras.preto)};
+    background-color: ${({ color, theme }) => (color ? getColor({ color }) : theme.coresNeutras.preto)};
     color: ${({ color }) => getContrastColor({ color })};
     transition: 0.5s;
   }

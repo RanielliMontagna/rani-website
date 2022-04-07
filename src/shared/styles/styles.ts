@@ -29,15 +29,15 @@ export const getColor = ({ color }: { color?: Colors }) => {
       `;
     case 'darkGray':
       return css`
-        ${({ theme }) => theme.coresExtras.cinzaClaro};
+        ${({ theme }) => theme.coresNeutras.cinzaClaro};
       `;
     case 'lightGray':
       return css`
-        ${({ theme }) => theme.coresExtras.cinzaEscuro};
+        ${({ theme }) => theme.coresNeutras.cinzaEscuro};
       `;
     case 'darkBlue':
       return css`
-        ${({ theme }) => theme.coresExtras.pretoAppBar};
+        ${({ theme }) => theme.coresNeutras.pretoAppBar};
       `;
     default:
       return css`
@@ -50,7 +50,7 @@ export const getContrastColor = ({ color }: { color?: Colors }) => {
   switch (color) {
     case 'primary':
       return css`
-        ${({ theme }) => theme.coresExtras.branco};
+        ${({ theme }) => theme.coresNeutras.branco};
       `;
     case 'secondary':
       return css`
@@ -62,31 +62,31 @@ export const getContrastColor = ({ color }: { color?: Colors }) => {
       `;
     case 'success':
       return css`
-        ${({ theme }) => theme.coresExtras.branco};
+        ${({ theme }) => theme.coresNeutras.branco};
       `;
     case 'warning':
       return css`
-        ${({ theme }) => theme.coresExtras.branco};
+        ${({ theme }) => theme.coresNeutras.branco};
       `;
     case 'danger':
       return css`
-        ${({ theme }) => theme.coresExtras.branco};
+        ${({ theme }) => theme.coresNeutras.branco};
       `;
     case 'darkGray':
       return css`
-        ${({ theme }) => theme.coresExtras.branco};
+        ${({ theme }) => theme.coresNeutras.branco};
       `;
     case 'lightGray':
       return css`
-        ${({ theme }) => theme.coresExtras.branco};
+        ${({ theme }) => theme.coresNeutras.branco};
       `;
     case 'darkBlue':
       return css`
-        ${({ theme }) => theme.coresExtras.branco};
+        ${({ theme }) => theme.coresNeutras.branco};
       `;
     default:
       return css`
-        ${({ theme }) => theme.coresExtras.preto};
+        ${({ theme }) => theme.coresNeutras.preto};
       `;
   }
 };

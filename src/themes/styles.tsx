@@ -30,10 +30,10 @@ export const GlobalStyles = createGlobalStyle<{ theme: ThemeType }>`
     background: ${({ theme }) => theme.cores.terciaria}; 
   }
   ::-webkit-scrollbar-thumb {
-    background: ${({ theme }) => theme.coresExtras.cinzaEscuro}90;
+    background: ${({ theme }) => theme.coresNeutras.cinzaEscuro}90;
     border-radius: 100px; 
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: ${({ theme }) => theme.coresExtras.cinzaEscuro}; 
+    background: ${({ theme }) => theme.coresNeutras.cinzaEscuro}; 
   }
 `;

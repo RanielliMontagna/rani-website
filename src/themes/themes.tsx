@@ -3,10 +3,10 @@ import { ThemeProvider } from 'styled-components';
 import { azulQD, brancoQD, cinzaClaro, cinzaEscuro, danger, pretoAzulado, pretoQD, success, warning } from './cores';
 import { tamanhoFonte } from './fontes';
 
-const _coresExtras = {
+const _coresNeutras = {
   cinzaClaro: cinzaClaro,
   cinzaEscuro: cinzaEscuro,
-  pretoAppBar: pretoAzulado,
+  pretoAzulado: pretoAzulado,
   branco: brancoQD,
   preto: pretoQD,
   azul: azulQD,
@@ -26,7 +26,7 @@ export const _temaClaro = {
     terciaria: brancoQD,
   },
   coresUtilitarias: _coresUtilitarias,
-  coresExtras: _coresExtras,
+  coresNeutras: _coresNeutras,
 };
 
 export const _temaEscuro = {
@@ -37,7 +37,7 @@ export const _temaEscuro = {
     terciaria: pretoQD,
   },
   coresUtilitarias: _coresUtilitarias,
-  coresExtras: _coresExtras,
+  coresNeutras: _coresNeutras,
 };
 
 export type ThemeType = typeof _temaClaro;

@@ -9,8 +9,8 @@ export const TitleBar = styled.div`
   width: calc(100% - 64px);
   padding: 0px 32px;
   height: 60px;
-  color: ${({ theme }) => theme.coresExtras.branco};
-  background-color: ${({ theme }) => theme.coresExtras.preto};
+  color: ${({ theme }) => theme.coresNeutras.branco};
+  background-color: ${({ theme }) => theme.coresNeutras.preto};
   font-size: 24px;
 
   .quarto {
@@ -62,7 +62,7 @@ export const Opcoes = styled.div`
   border-radius: 0px 0px 8px 8px;
 
   &:hover {
-    background-color: ${({ theme }) => theme.coresExtras.azul}80;
+    background-color: ${({ theme }) => theme.coresNeutras.azul}80;
   }
 `;
 
@@ -70,5 +70,5 @@ export const Sublinhado = styled.div`
   width: 100%;
   margin-top: 4px;
   height: 3px;
-  background-color: ${({ theme }) => theme.coresExtras.azul};
+  background-color: ${({ theme }) => theme.coresNeutras.azul};
 `;

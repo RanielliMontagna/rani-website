@@ -6,8 +6,8 @@ export const DivFooter = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.coresExtras.preto};
-  color: ${({ theme }) => theme.coresExtras.cinzaClaro};
+  background-color: ${({ theme }) => theme.coresNeutras.preto};
+  color: ${({ theme }) => theme.coresNeutras.cinzaClaro};
 
   .ranielli {
     margin-right: 4px;
@@ -20,7 +20,7 @@ export const DivFooter = styled.div`
 
   a {
     text-decoration: none;
-    color: ${({ theme }) => theme.coresExtras.cinzaClaro};
+    color: ${({ theme }) => theme.coresNeutras.cinzaClaro};
   }
 `;
 
@@ -58,7 +58,7 @@ export const RedeSocial = styled.div`
   transition: 0.2s;
 
   &:hover {
-    color: ${({ theme }) => theme.coresExtras.branco};
+    color: ${({ theme }) => theme.coresNeutras.branco};
     cursor: pointer;
   }
 `;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const DivConteudo = styled.div`
-  color: ${({ theme }) => theme.coresExtras.branco};
+  color: ${({ theme }) => theme.coresNeutras.branco};
   display: flex;
   width: 1000px;
 

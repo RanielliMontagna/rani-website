@@ -5,14 +5,14 @@ import { Menu as SzhsinMenu } from '@szhsin/react-menu';
 export const Menu = styled(SzhsinMenu)<{ tema: string | null }>`
   > ul {
     background-color: ${({ theme, tema }) =>
-      tema === 'escuro' ? theme.coresExtras.pretoAppBar : theme.cores.terciaria};
+      tema === 'escuro' ? theme.coresNeutras.pretoAppBar : theme.cores.terciaria};
   }
   > ul > li.szh-menu__divider {
     background-color: ${({ theme }) => theme.cores.secundaria}20;
   }
   > ul > div.szh-menu__arrow {
     background-color: ${({ theme, tema }) =>
-      tema === 'escuro' ? theme.coresExtras.pretoAppBar : theme.cores.terciaria};
+      tema === 'escuro' ? theme.coresNeutras.pretoAppBar : theme.cores.terciaria};
   }
   > ul > li.szh-menu__item {
     height: 30px;

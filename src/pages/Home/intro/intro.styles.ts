@@ -6,7 +6,7 @@ export const Intro = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  color: ${({ theme }) => theme.coresExtras.branco};
+  color: ${({ theme }) => theme.coresNeutras.branco};
   font-size: 4vw;
   background-image: url('https://images.unsplash.com/photo-1496302662116-35cc4f36df92');
   background-size: cover;
@@ -28,7 +28,7 @@ export const Titulo = styled.div`
   }
 
   .primaria {
-    color: ${({ theme }) => theme.coresExtras.azul};
+    color: ${({ theme }) => theme.coresNeutras.azul};
     font-weight: bold;
   }
 `;
@@ -51,7 +51,7 @@ export const DivArrow = styled.div`
 `;
 
 export const SaibaMais = styled.div`
-  color: ${({ theme }) => theme.coresExtras.branco};
+  color: ${({ theme }) => theme.coresNeutras.branco};
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -64,6 +64,6 @@ export const SaibaMais = styled.div`
   }
 
   &:hover {
-    background-color: ${({ theme }) => theme.coresExtras.preto}80;
+    background-color: ${({ theme }) => theme.coresNeutras.preto}80;
   }
 `;

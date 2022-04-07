@@ -25,7 +25,8 @@ export const Modal = styled.div<{ size: Size; tema: string | null }>`
   position: relative;
   inset: 0;
   border-radius: 8px;
-  background-color: ${({ theme, tema }) => (tema === 'escuro' ? theme.coresExtras.pretoAppBar : theme.cores.terciaria)};
+  background-color: ${({ theme, tema }) =>
+    tema === 'escuro' ? theme.coresNeutras.pretoAppBar : theme.cores.terciaria};
   color: ${({ theme }) => theme.cores.secundaria};
 `;
 

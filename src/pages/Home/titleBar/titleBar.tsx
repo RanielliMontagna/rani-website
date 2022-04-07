@@ -35,13 +35,13 @@ const TitleBar = () => {
           </Tooltip>
 
           <Tooltip title={<Typography size="md">Sobre</Typography>} arrow>
-            <styled.Opcoes onClick={_handleInicio}>
+            <styled.Opcoes onClick={_handleSobre}>
               <FiInfo />
             </styled.Opcoes>
           </Tooltip>
 
           <Tooltip title={<Typography size="md">Contato</Typography>} arrow>
-            <styled.Opcoes onClick={_handleInicio}>
+            <styled.Opcoes onClick={_handleContato}>
               <FiPhoneCall />
             </styled.Opcoes>
           </Tooltip>
