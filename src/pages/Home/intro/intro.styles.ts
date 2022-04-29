@@ -9,12 +9,12 @@ export const Intro = styled.div`
   color: ${({ theme }) => theme.coresNeutras.branco};
   font-size: 4vw;
   background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  position: relative;
 
   /* TODO: adicionar imagem minha de fundo */
   /* background-image: url(url-da-foto-aqui); */
   /* background-size: cover; */
   /* background-position: center; */
-  /* position: relative; */
 `;
 
 export const Titulo = styled.div`

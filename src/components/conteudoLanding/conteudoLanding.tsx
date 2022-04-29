@@ -20,7 +20,7 @@ const ConteudoLanding: FC<ConteudoLandingProps> = ({ titulo, texto, imagem, butt
         {button && <Button {...button} />}
       </styled.DivTexto>
       <styled.DivImagem>
-        <styled.Imagem src={imagem} alt={imagem} />
+        <styled.Imagem src={imagem} alt={imagem} style={{ width: '40vh', height: '40vh' }} />
       </styled.DivImagem>
     </styled.DivConteudo>
   );
