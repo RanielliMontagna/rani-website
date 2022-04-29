@@ -8,10 +8,13 @@ export const Intro = styled.div`
   flex-direction: column;
   color: ${({ theme }) => theme.coresNeutras.branco};
   font-size: 4vw;
-  background-image: url('https://images.unsplash.com/photo-1496302662116-35cc4f36df92');
-  background-size: cover;
-  background-position: center;
-  position: relative;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+
+  /* TODO: adicionar imagem minha de fundo */
+  /* background-image: url(url-da-foto-aqui); */
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* position: relative; */
 `;
 
 export const Titulo = styled.div`

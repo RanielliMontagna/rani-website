@@ -9,7 +9,7 @@ const Intro = () => {
       </styled.Titulo>
       <styled.Descricao>Bem vindos ao meu site, aqui você vai encontrar mais informações sobre mim.</styled.Descricao>
       <styled.DivArrow>
-        <a href="#sobre" style={{ color: 'inherit' }}>
+        <a href="#sobre" aria-label="Sobre" style={{ color: 'inherit' }}>
           <styled.SaibaMais>
             <FiArrowDown size={32} />
           </styled.SaibaMais>
