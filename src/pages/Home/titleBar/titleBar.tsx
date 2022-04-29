@@ -1,13 +1,27 @@
+import { memo, useCallback, useState } from 'react';
+import { FiHome, FiInfo, FiPhoneCall } from 'react-icons/fi';
+
 import { Tooltip } from '@mui/material';
 import { Typography } from 'components';
-import { memo, useCallback } from 'react';
-import { FiHome, FiInfo, FiPhoneCall } from 'react-icons/fi';
+import { useWindowSize } from 'utils';
 import * as styled from './titleBar.styles';
 
 const TitleBar = () => {
-  const _handleInicio = useCallback(() => (window.location.href = '#inicio'), []);
-  const _handleSobre = useCallback(() => (window.location.href = '#sobre'), []);
-  const _handleContato = useCallback(() => (window.location.href = '#contato'), []);
+  const { width } = useWindowSize();
+  const [_, setReRender] = useState(false);
+
+  const _handleInicio = useCallback(() => {
+    setReRender((current) => !current);
+    window.location.href = '#inicio';
+  }, []);
+  const _handleSobre = useCallback(() => {
+    setReRender((current) => !current);
+    window.location.href = '#sobre';
+  }, []);
+  const _handleContato = useCallback(() => {
+    setReRender((current) => !current);
+    window.location.href = '#contato';
+  }, []);
 
   return (
     <styled.TitleBar>
@@ -34,17 +48,21 @@ const TitleBar = () => {
             </styled.Opcoes>
           </Tooltip>
 
-          <Tooltip title={<Typography size="md">Sobre</Typography>} arrow>
-            <styled.Opcoes onClick={_handleSobre}>
-              <FiInfo />
-            </styled.Opcoes>
-          </Tooltip>
+          {width >= 500 && (
+            <>
+              <Tooltip title={<Typography size="md">Sobre</Typography>} arrow>
+                <styled.Opcoes onClick={_handleSobre}>
+                  <FiInfo />
+                </styled.Opcoes>
+              </Tooltip>
 
-          <Tooltip title={<Typography size="md">Contato</Typography>} arrow>
-            <styled.Opcoes onClick={_handleContato}>
-              <FiPhoneCall />
-            </styled.Opcoes>
-          </Tooltip>
+              <Tooltip title={<Typography size="md">Contato</Typography>} arrow>
+                <styled.Opcoes onClick={_handleContato}>
+                  <FiPhoneCall />
+                </styled.Opcoes>
+              </Tooltip>
+            </>
+          )}
         </styled.DivOpcoes>
       </styled.DivInterna>
     </styled.TitleBar>

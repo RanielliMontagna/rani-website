@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const DivContato = styled.div`
+export const DivExterna = styled.div`
   border: 0px solid ${({ theme }) => theme.coresNeutras.pretoAzulado};
   border-top-width: 1px;
   display: flex;
@@ -9,17 +9,9 @@ export const DivContato = styled.div`
 
 export const DivInterna = styled.div`
   width: 1000px;
-  padding: 64px 32px;
+  padding: 32px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-`;
-
-export const DivCards = styled.div`
-  display: flex;
-
-  @media (max-width: 1000px) {
-    margin-top: 16px;
-    flex-direction: column;
-  }
+  text-align: center;
 `;

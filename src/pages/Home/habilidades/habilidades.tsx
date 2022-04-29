@@ -21,7 +21,13 @@ const Habilidades = () => {
         </Typography>
         <DivHabilidades>
           {dadosHabilidades.map((it) => (
-            <Typography className={it.class} size="xl" weight="bold" style={{ color: coresNeutras.cinzaEscuro }}>
+            <Typography
+              key={it.nome}
+              className={it.class}
+              size="xl"
+              weight="bold"
+              style={{ color: coresNeutras.cinzaEscuro }}
+            >
               {it.nome}
             </Typography>
           ))}

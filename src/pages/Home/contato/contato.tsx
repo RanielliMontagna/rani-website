@@ -13,7 +13,7 @@ const Contato = () => {
         <Divider styles={{ width: '115px' }} />
         <DivCards>
           {dadosCards.map((dados) => (
-            <CardContato {...dados} />
+            <CardContato key={dados.titulo} {...dados} />
           ))}
         </DivCards>
       </DivInterna>

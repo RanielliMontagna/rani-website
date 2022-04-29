@@ -26,7 +26,7 @@ export const DivCardContato = styled.div`
 
   @media (max-width: 1000px) {
     cursor: default;
-    width: 80vw;
+    width: 70vw;
     margin: 8px 0px;
   }
 `;
