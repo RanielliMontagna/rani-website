@@ -8,6 +8,7 @@ import * as styled from './titleBar.styles';
 
 const TitleBar = () => {
   const { width } = useWindowSize();
+  //eslint-disable-next-line
   const [_, setReRender] = useState(false);
 
   const _handleInicio = useCallback(() => {

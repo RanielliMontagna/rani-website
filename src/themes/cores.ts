@@ -1,5 +1,5 @@
 // Principais
-export const azulQD = '#384B78';
+export const azulQD = '#1087E0';
 export const pretoQD = '#22252C';
 export const brancoQD = '#FFFFFF';
 // Utilitarias

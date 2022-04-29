@@ -12,10 +12,6 @@ export const Intro = styled.div`
   background-size: cover;
   background-position: center;
   position: relative;
-
-  @media (max-width: 576px) {
-    background-image: url('/static/images/quartoMobile.jpg');
-  }
 `;
 
 export const Titulo = styled.div`

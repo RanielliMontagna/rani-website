@@ -12,7 +12,7 @@ const Habilidades = () => {
     <DivExterna>
       <DivInterna>
         <Typography size="xl" weight="bold">
-          Habilidades diferentes, <span style={{ color: '#4a66a7' }}>mesma energia</span>
+          Habilidades diferentes, <span style={{ color: '#1087E0' }}>mesma energia</span>
         </Typography>
         <Typography size="md" style={{ textAlign: width < 1000 ? 'justify' : 'center' }}>
           Hoje, minhas habilidades na área estão voltadas para o desenvolvimento de aplicações web, mobile e desktop.
@@ -26,7 +26,7 @@ const Habilidades = () => {
               className={it.class}
               size="xl"
               weight="bold"
-              style={{ color: coresNeutras.cinzaEscuro }}
+              style={{ color: coresNeutras.cinzaClaro }}
             >
               {it.nome}
             </Typography>
