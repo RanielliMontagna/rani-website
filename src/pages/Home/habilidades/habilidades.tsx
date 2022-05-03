@@ -2,7 +2,7 @@ import { DivExterna, DivHabilidades, DivInterna } from './habilidades.styles';
 import { Typography } from 'components';
 import { useTheme } from 'hooks';
 import { dadosHabilidades } from './habilidades.static';
-import useWindowSize from 'utils/useWindowSize';
+import { useWindowSize } from 'utils';
 
 const Habilidades = () => {
   const { coresNeutras } = useTheme();

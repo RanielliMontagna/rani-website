@@ -20,6 +20,7 @@ const Sobre = () => {
           children: 'Baixar CV',
           variant: 'outlined',
           size: 'lg',
+          onClick: () => window.open('./curriculo.pdf', '_blank'),
           startIcon: <FiDownload />,
         }}
       />
