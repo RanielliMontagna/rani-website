@@ -8,6 +8,7 @@ module.exports = {
         terserOptions: {
           sourceMap: true,
         },
+        cache: true,
         parallel: true,
       }),
     ],
