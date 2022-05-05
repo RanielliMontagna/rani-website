@@ -8,3 +8,4 @@ export { default as ConteudoLanding } from './conteudoLanding/conteudoLanding';
 export { default as Divider } from './divider/divider';
 export { default as Typography } from './typography/typography';
 export { default as Loading } from './loading/loading';
+export { default as TypeWriter } from './typeWriter/typeWriter';

@@ -19,6 +19,8 @@ export const Intro = styled.div`
 
 export const Titulo = styled.div`
   text-align: center;
+  display: flex;
+  gap: 16px;
 
   @media (max-width: 576px) {
     display: flex;
