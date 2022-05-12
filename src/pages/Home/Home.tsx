@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import * as styled from './Home.styles';
 
 import TitleBar from './titleBar/titleBar';
@@ -9,11 +10,18 @@ import Contato from './contato/contato';
 import Estudos from './estudos/estudos';
 import Experiencia from './experiencia/experiencia';
 
-import { Element } from 'react-scroll';
+import { Element, animateScroll } from 'react-scroll';
 
 const LandingPage = () => {
+  useEffect(() => {
+    animateScroll.scrollTo(1);
+    setTimeout(() => {
+      animateScroll.scrollToTop();
+    }, 0);
+  }, []);
+
   return (
-    <styled.Geral>
+    <styled.Geral id="geral">
       <TitleBar />
 
       <Element name="intro">
