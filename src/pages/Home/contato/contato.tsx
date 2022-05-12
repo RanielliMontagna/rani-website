@@ -5,7 +5,7 @@ import CardContato from './cardContato/cardContato';
 
 const Contato = () => {
   return (
-    <DivContato id="contato">
+    <DivContato>
       <DivInterna>
         <Typography size="xl" weight="bold">
           Contato

@@ -9,16 +9,28 @@ import Contato from './contato/contato';
 import Estudos from './estudos/estudos';
 import Experiencia from './experiencia/experiencia';
 
+import { Element } from 'react-scroll';
+
 const LandingPage = () => {
   return (
     <styled.Geral>
       <TitleBar />
-      <Intro />
-      <Sobre />
-      <Habilidades />
-      <Estudos />
+
+      <Element name="intro">
+        <Intro />
+      </Element>
+
+      <Element name="sobre" style={{ marginBottom: '-40px', paddingBottom: '40px' }}>
+        <Sobre />
+        <Habilidades />
+        <Estudos />
+      </Element>
       <Experiencia />
-      <Contato />
+
+      <Element name="contato" style={{ marginTop: '-500px', paddingTop: '500px' }}>
+        <Contato />
+      </Element>
+
       <Footer />
     </styled.Geral>
   );

@@ -11,7 +11,7 @@ const Public: FC<PublicProps> = ({ children }) => {
   const { loading } = useApp();
 
   return (
-    <div style={{ display: 'flex', height: '100vh', overflow: 'hidden' }}>
+    <div style={{ display: 'flex' }}>
       {loading && <Loading />}
       <styled.DivChildren>{children}</styled.DivChildren>
     </div>

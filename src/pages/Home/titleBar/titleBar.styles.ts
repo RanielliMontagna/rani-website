@@ -1,10 +1,11 @@
+import { Link } from 'react-scroll';
 import styled from 'styled-components';
 
 export const TitleBar = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: calc(100% - 64px);
   padding: 0px 32px;
@@ -51,7 +52,7 @@ export const DivOpcoes = styled.div`
   }
 `;
 
-export const Opcoes = styled.div`
+export const OpcoesPhone = styled.div`
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -60,6 +61,36 @@ export const Opcoes = styled.div`
   padding: 0px 24px;
   transition: 0.3s;
   border-radius: 0px 0px 8px 8px;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.coresNeutras.azul}80;
+  }
+`;
+
+export const LinkOpcao = styled(Link)`
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 0px 24px;
+  transition: 0.3s;
+  border-radius: 0px 0px 8px 8px;
+  transition: all 0.5s ease-in-out;
+
+  .sublinhado {
+    margin-bottom: -5px;
+    opacity: 0;
+  }
+
+  &.active {
+    background-color: ${({ theme }) => theme.coresNeutras.azul}30;
+
+    .sublinhado {
+      transition: all 0.5s ease-in-out;
+      opacity: 1;
+    }
+  }
 
   &:hover {
     background-color: ${({ theme }) => theme.coresNeutras.azul}80;
