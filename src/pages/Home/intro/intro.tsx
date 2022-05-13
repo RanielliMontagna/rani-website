@@ -22,13 +22,11 @@ const Intro = () => {
         />
       </styled.Descricao>
       <styled.DivArrow>
-        <a href="#sobre" aria-label="Sobre" style={{ color: 'inherit' }}>
-          <Link to="sobre">
-            <styled.SaibaMais>
-              <FiArrowDown size={32} />
-            </styled.SaibaMais>
-          </Link>
-        </a>
+        <Link to="sobre" href="sobre" smooth={true} offset={50}>
+          <styled.SaibaMais>
+            <FiArrowDown size={32} />
+          </styled.SaibaMais>
+        </Link>
       </styled.DivArrow>
     </styled.Intro>
   );

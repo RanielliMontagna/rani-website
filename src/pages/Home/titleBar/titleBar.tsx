@@ -18,20 +18,57 @@ const TitleBar = () => {
           <div className="digital">Montagna</div>
         </div>
         <styled.DivOpcoes className="menuWeb">
-          <styled.LinkOpcao to="intro" smooth={true} activeClass="active" spy={true} offset={-50} duration={500}>
+          <styled.LinkOpcao
+            to="intro"
+            href="intro"
+            style={{ color: 'white', textDecoration: 'none' }}
+            smooth={true}
+            activeClass="active"
+            spy={true}
+            offset={-50}
+            duration={500}
+          >
             Ínicio <styled.Sublinhado className="sublinhado" />
           </styled.LinkOpcao>
 
-          <styled.LinkOpcao to="sobre" smooth={true} activeClass="active" spy={true} offset={50} duration={500}>
+          <styled.LinkOpcao
+            to="sobre"
+            href="sobre"
+            style={{ color: 'white', textDecoration: 'none' }}
+            smooth={true}
+            activeClass="active"
+            spy={true}
+            offset={50}
+            duration={500}
+          >
             Sobre <styled.Sublinhado className="sublinhado" />
           </styled.LinkOpcao>
 
-          <styled.LinkOpcao to="contato" smooth={true} activeClass="active" spy={true} offset={50} duration={500}>
+          <styled.LinkOpcao
+            to="contato"
+            href="contato"
+            style={{ color: 'white', textDecoration: 'none' }}
+            smooth={true}
+            activeClass="active"
+            spy={true}
+            offset={50}
+            duration={500}
+          >
             Contato <styled.Sublinhado className="sublinhado" />
           </styled.LinkOpcao>
         </styled.DivOpcoes>
         <styled.DivOpcoes className="menuMobile">
-          <Link to="intro" id="intro" smooth={true} activeClass="active" spy={true} offset={50} duration={500}>
+          <Link
+            to="intro"
+            href="intro"
+            style={{ color: 'white', textDecoration: 'none' }}
+            id="intro"
+            smooth={true}
+            activeClass="active"
+            spy={true}
+            offset={50}
+            duration={500}
+          >
             <Tooltip title={<Typography size="md">Ínicio</Typography>} arrow>
               <styled.OpcoesPhone>
                 <FiHome />
@@ -41,7 +78,17 @@ const TitleBar = () => {
 
           {width >= 500 && (
             <>
-              <Link to="sobre" id="sobre" smooth={true} activeClass="active" spy={true} offset={50} duration={500}>
+              <Link
+                to="sobre"
+                href="sobre"
+                style={{ color: 'white', textDecoration: 'none' }}
+                id="sobre"
+                smooth={true}
+                activeClass="active"
+                spy={true}
+                offset={50}
+                duration={500}
+              >
                 <Tooltip title={<Typography size="md">Sobre</Typography>} arrow>
                   <styled.OpcoesPhone>
                     <FiInfo />
@@ -49,7 +96,17 @@ const TitleBar = () => {
                 </Tooltip>
               </Link>
 
-              <Link to="contato" id="contato" smooth={true} activeClass="active" spy={true} offset={50} duration={500}>
+              <Link
+                to="contato"
+                href="contato"
+                style={{ color: 'white', textDecoration: 'none' }}
+                id="contato"
+                smooth={true}
+                activeClass="active"
+                spy={true}
+                offset={50}
+                duration={500}
+              >
                 <Tooltip title={<Typography size="md">Contato</Typography>} arrow>
                   <styled.OpcoesPhone>
                     <FiPhoneCall />
