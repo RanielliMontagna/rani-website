@@ -22,7 +22,7 @@ const Intro = () => {
         />
       </styled.Descricao>
       <styled.DivArrow>
-        <Link to="sobre" href="sobre" smooth={true} offset={50}>
+        <Link to="sobre" aria-label="Sobre" href="sobre" smooth={true} offset={50}>
           <styled.SaibaMais>
             <FiArrowDown size={32} />
           </styled.SaibaMais>
