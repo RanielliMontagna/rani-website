@@ -15,7 +15,7 @@ const Sobre = () => {
             inovar e evoluir no que faço.
           </>
         }
-        imagem="static/svgs/about.svg"
+        imagem="./static/svgs/foto.svg"
         button={{
           children: 'Baixar CV',
           variant: 'outlined',
