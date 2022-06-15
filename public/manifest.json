@@ -18,7 +18,9 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": "index.html",
+  "start_url": "https://www.ranimontagna.com/",
+  "orientation": "portrait",
+  "lang": "pt-BR",
   "display": "standalone",
   "theme_color": "#384B78",
   "prefer_related_applications": false,
