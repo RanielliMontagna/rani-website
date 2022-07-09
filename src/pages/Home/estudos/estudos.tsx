@@ -14,7 +14,7 @@ const Estudos = () => {
 
   return (
     <DivExterna>
-      <DivInterna>
+      <DivInterna data-aos="fade-up" data-aos-duration="1500">
         <div>
           <h1>Estudos</h1>
           <Divider styles={{ margin: '0px 0px 16px 0px', width: '120px' }} />

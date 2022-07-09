@@ -1,13 +1,15 @@
 import styled from 'styled-components';
 
 export const DivFooter = styled.div`
+  background-color: #00000005;
   padding-top: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.coresNeutras.preto};
   color: ${({ theme }) => theme.coresNeutras.cinzaClaro};
+  border: 0px solid ${({ theme }) => theme.coresNeutras.pretoAzulado};
+  border-top-width: 1px;
 
   .ranielli {
     margin-right: 4px;

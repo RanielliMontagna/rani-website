@@ -10,7 +10,7 @@ const Habilidades = () => {
 
   return (
     <DivExterna>
-      <DivInterna>
+      <DivInterna data-aos="fade-up" data-aos-duration="1500">
         <Typography size="xl" weight="bold">
           Habilidades diferentes, <span style={{ color: '#1087E0' }}>mesma energia</span>
         </Typography>
