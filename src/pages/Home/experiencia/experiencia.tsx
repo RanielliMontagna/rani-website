@@ -5,7 +5,7 @@ import Item from './item/item';
 
 import { Timeline } from '@mui/lab';
 
-import { FaReact } from 'react-icons/fa';
+import { FaConnectdevelop, FaReact } from 'react-icons/fa';
 import { MdOutlineHomeWork } from 'react-icons/md';
 import { Divider } from 'components';
 
@@ -21,6 +21,12 @@ const Experiencia = () => {
         </div>
 
         <Timeline position={width > 530 ? 'alternate' : 'right'}>
+          <Item
+            ano="2022"
+            titulo="Tech Lead Front-End"
+            local="SB Sistemas - Marau, RS"
+            icone={<FaConnectdevelop size={40} />}
+          />
           <Item
             ano="2022"
             titulo="Desenvolvimento Front-End e Mobile"
@@ -40,3 +46,4 @@ const Experiencia = () => {
 };
 
 export default Experiencia;
+
